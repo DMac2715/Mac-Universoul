@@ -13,9 +13,9 @@ const itemsInCart = [];
 // instead of one function per item
 // which means less code to add/remove if items change
 const items = {
-    item1: "<p>Goddess Blend</p>",
-    item2: "<p>God Blend</p>",
-    item3: "<p>Royalty Blend</p>"
+  item1: "<p>Goddess Blend</p>",
+  item2: "<p>God Blend</p>",
+  item3: "<p>Royalty Blend</p>"
 };
 // takes all of the items in the cart and converts them to HTML
 // this pattern makes removing items from the cart easier,
@@ -23,13 +23,13 @@ const items = {
 // edit the HTML.
 
 const updateCart = () => {
-    modalContent.innerHTML = itemsInCart.map((item) => items[item]).join("");
+  modalContent.innerHTML = itemsInCart.map((item) => items[item]).join("");
 };
 
 // add an item to the list of items, then update the UI
 const addItemToCart = (item) => {
-    itemsInCart.push(item);
-    updateCart();
+  itemsInCart.push(item);
+  updateCart();
 };
 
 // Get the modal
@@ -42,24 +42,19 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
+btn.onclick = function () {
+  modal.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
+span.onclick = function () {
+  modal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 };
 
-
-// document.getElementById('Sign-up').addEventListner('submit', function (event) {
-//  event.preventDefault(); 
-//   console.log(event.target);
-// });
