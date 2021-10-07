@@ -1,0 +1,243 @@
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport' content='width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!--   Nav Bar  -->
+
+  <nav id="home" class="nav-bar">
+    <ul class="nav">
+      <li class="theli"><a href="#home">Home</a></li>
+      <li class="theli"><a href="#product">Product</a></li>
+      <li><img class="logo" src="https://mail.google.com/mail/u/0?ui=2&ik=f86b6a84b1&attid=0.1&permmsgid=msg-f:1699392084502567514&th=17957418dae2da5a&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-UaBJdaakx9XCE2jokFuy4HukiuiNB_9rNaL8kRbsZABXBEVatHZ5szi-dXgY5pPMI-VhSqAypNyUKcYKrcKBfCC38XVmKM49_38SsDbGNGZa6MN00q_Yg8Jg&disp=emb&realattid=c65bba55260c8808_0.1.1" alt=""></li>
+      <li class="theli"><a href="#about">About</a></li>
+      <li class="theli"><a href="#contacts">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--   Checkout icon -->
+  <main id="cartContainer" class="checkbox-background">
+    <button id="myBtn" class="fas">&#xf07a;</button>
+  </main>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div id="modalContent" class="modal-content">
+      <span class="close">&times;</span>
+
+    </div>
+
+  </div>
+
+  <!--   Sideways Gradient/ Hero -->
+
+  <div class="sideways-gradient">
+    <div class="h1-p">
+      <h1>Welcome To Mac Universoul</h1>
+      <p class="p-hero">A Life Worth Living</p>
+    </div>
+  </div>
+
+  <!--   Social Media Post Container -->
+
+  <div class="socialmedia">
+    <section class="grid-box">
+      <img class="first-pic" src="https://mail.google.com/mail/u/0?ui=2&ik=f86b6a84b1&attid=0.1&permmsgid=msg-a:r2960818466656014172&th=179e7cb07cab2a05&view=att&disp=safe&realattid=179e7cae668dcf1b1ee1" alt="">
+
+    </section>
+
+    <section class="grid-box">
+      <img class="second-pic" src="https://mail.google.com/mail/u/0?ui=2&ik=f86b6a84b1&attid=0.1&permmsgid=msg-a:r1998479536909397274&th=179e92bce3e1e08e&view=att&disp=safe&realattid=179e92bb8001fbc95be1" alt="">
+
+    </section>
+    <section class="grid-box">
+      <img class="third-pic" src="https://mail.google.com/mail/u/0?ui=2&ik=f86b6a84b1&attid=0.1&permmsgid=msg-a:r-8103539903427151875&th=179e8ad2e5797a94&view=att&disp=safe&realattid=179e8ad16c680c80491" alt="">
+    </section>
+
+  </div>
+  <!--   Newsletter Container-->
+
+  <sectoin class="sign-up">
+    <form id="sign-up">
+      <input type="text" name="name[first&last]" placeholder=" First & Last Name" id="Name" autofocus>
+      <input type="text" name="email" placeholder="Email" id="email" autofocus>
+      <input class="submit" type="submit" value="Sign-Up">
+    </form>
+    <h2>Sign-Up for Our Newsletter</h2>
+  </sectoin>
+  <hr />
+
+  <!--   Herbal Products Title & Container-->
+
+  <div id="product" class="herbs">
+    <h3>Herbs</h3>
+    <div class="herb-container">
+      <div class="container">
+
+        <!--         Goddessblend item-container -->
+
+        <div id="Goddessblend" class="item-container">
+          <h5>Goddess Blend</h5>
+          <div class="item-one">
+            <div class="herb-title">
+              <h4>SeaMoss</h4>
+
+              <div class="herb-info-container">
+                <p class="herb-info">Seamoss which has 92 of 102 Minerals the body is made of.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="item-two">
+            <div class="herb-title">
+              <h4>Bladderwrack</h4>
+
+              <div class="herb-info-container">
+                <p class="herb-info">Bladderwrack is rich in calcium, magnesium, potassium and lowers cholesterol levels.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-three">
+            <div class="herb-title">
+              <h4>Blessed Thistle</h4>
+
+              <div class="herb-info-container">
+                <p class="herb-info">Blessed Thistle supports the brain, heart, lung, liver and gallbladder function.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-four">
+            <div class="herb-title">
+              <h4>Raspberry Leaf</h4>
+
+              <div class="herb-info-container">
+                <p class="herb-info">Raspberry leaf helps stimulate proper blood circulation, help heal internal illnesses and ulcers in the digestive system.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-five">
+            <div class="herb-title">
+              <h4>Lavender</h4>
+
+              <div class="herb-info-container">
+                <p class="herb-info">Levander supports weight loss, skin care, treats restlessness, insomnia, nervousness, depression, nerve pain and joint pain.</p>
+              </div>
+            </div>
+          </div>
+          <button id="item1" class="Check-out" onClick="addItemToCart(this.id)">Add to cart</button>
+        </div>
+
+        <!-- Godblend item-container -->
+
+        <div id="Godblend" class="item-container">
+          <h5>God Blend</h5>
+
+          <div class="item-one">
+            <div class="herb-title">
+              <h4>SeaMoss</h4>
+
+              <div class="herb-info-container">
+                <p class="herb-info">Seamoss which has 92 of 102 Minerals the body is made of.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-two">
+            <div class="herb-title">
+              <h4>Bladderwrack</h4>
+              <div class="herb-info-container">
+                <p class="herb-info">Bladderwrack is rich in calcium, magnesium, potassium and lowers cholesterol levels.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-three">
+            <div class="herb-title">
+              <h4>Blessed Thistle</h4>
+              <div class="herb-info-container">
+                <p class="herb-info">Blessed Thistle supports the brain, heart, lung, liver and gallbladder function</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-six">
+            <div class="herb-title">
+              <h4>Damiana</h4>
+              <div class="herb-info-container">
+                <p class="herb-info">Damiana helps balance estrogen and support testosterone levels in men.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-seven">
+            <div class="herb-title">
+              <h4>Sarsaprilla Root</h4>
+              <div class="herb-info-container">
+                <p class="herb-info">Sarsaparilla Root and it is high in concentration of iron, which helps in reversal of anemia/ blood cleanser.</p>
+              </div>
+            </div>
+          </div>
+          <button id="item2" class="Check-out" onClick="addItemToCart(this.id)">Add to cart</button>
+        </div>
+
+        <!--         Royalty blend container  -->
+
+        <div id="Royaltyblend" class="item-container">
+          <h5>Royalty Blend</h5>
+          <div class="item-one">
+            <div class="herb-title">
+              <h4>SeaMoss</h4>
+
+              <div class="herb-info-container">
+                <p class="herb-info">Seamoss which has 92 of 102 Minerals the body is made of.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-two">
+            <div class="herb-title">
+              <h4>Bladderwrack</h4>
+              <div class="herb-info-container">
+                <p class="herb-info">Bladderwrack is rich in calcium, magnesium, potassium and lowers cholesterol levels.</p>
+              </div>
+            </div>
+          </div>
+          <button id="item3" class="Check-out" onClick="addItemToCart(this.id)">Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="fda-container">
+      <p class="fda">FDA Statement</p>
+      <p class="fda-info">These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
+      </p>
+    </div>
+    <hr />
+    <h3>Mission</h3>
+    <div id="about" class="mission-info-container">
+      <p class="mission-info">We believe life has no purpose, so we studied the past and redefined learned perspectives. We just happen to help people find their purpose through eating alkaline and living an alkaline lifestyle.</p>
+    </div>
+  </div>
+  <hr class="last">
+
+  <section id="contacts" class="contacts">
+    <img class="insta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIgT_Mvsrk-hjQdWyhB3Ew8f3Z3Xc70C05cg&usqp=CAU" alt=""><br />
+    <h7>office: 1.707.232.4545</h7><br />
+    <h7>Powered By Da'Vion</h7>
+    <p class="copyright">&copy; 2021</p>
+  </section>
+
+</body>
+
+</html>
